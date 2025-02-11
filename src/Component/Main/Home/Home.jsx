@@ -5,8 +5,8 @@ import { TypeAnimation } from 'react-type-animation'
 const Home = () => {
   
   return (
-    <div id="home" className=" bg-cover  min-h-screen ms:bg-[50%] ms1:bg-[60%] md:bg-[68%] xl:bg-[100%] min-w-fit  bg-no-repeat  ms:bg-fixed xl:bg-scroll  brightness-50 opacity-95" 
-    style={{backgroundImage: "url('/Images/background.png')"}}
+    <div id="home" className=" bg-cover  min-h-screen ms:bg-[50%] ms1:bg-[60%] md:bg-[68%] xl:bg-[100%] min-w-fit  bg-no-repeat  ms:bg-fixed xl:bg-scroll " 
+    style={{backgroundImage: "url('/Images/background.avif')"}}
     >
        <motion.div className=' ms:text-[1.8rem] ms1:text-[2rem] ms2:text-[2.3rem] md:text-[2.8rem] md1:text-[2.9rem] md1:pl-12 md1:pt-[18rem]  xl:text-[3.5rem] font-raleway font-bold text-white ms:pt-[10rem] ms:pl-5 ms1:pt-[13rem] ms1:pl-7 ms2:pl-5 md:pt-[16rem] md:pl-10 xl:pt-[15rem] xl:pl-20'
         initial={{ y: 300, opacity: 100 }}

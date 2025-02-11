@@ -42,7 +42,7 @@ const About = () => {
               whileInView={{opacity:100,y:0}}
               transition={{duration: 1, ease:'easeOut'}}
             >
-              <img src="/Images/Me.jpg" alt="Profile" className="object-cover rounded-md md:h-[35rem] brightness-50 xl:h-[23rem] xl:mt-3 xl2:mt-2" />
+              <img src="/Images/Me.avif" alt="Profile" className="object-cover rounded-md md:h-[35rem]  xl:h-[23rem] xl:mt-3 xl2:mt-2" />
             </motion.div>
 
             <div>
