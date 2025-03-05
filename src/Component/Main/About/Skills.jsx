@@ -12,16 +12,17 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div id='skills' className='bg-creamGray h-[40rem] ms1:h-[43rem] ms2:h-[44.5rem] sm:h-[46.5rem] md:h-[49rem] xl:h-[34rem] pr-2 pl-3 md:pr-4 md:pl-5 '>
-      <div className='pt-11 ms2:pt-14 '>
+    <div id='skills' className='bg-creamGray h-[40rem] ms1:h-[43rem] ms2:h-[44.5rem] sm:h-[46.5rem] md:h-[49rem] xl:h-[34rem] pr-2 pl-3 md:pl-16 md:pr-10 xl:rr-4'>
+      <div className='pt-11 ms2:pt-14'>
         <motion.div 
-          className="text-3xl font-bold sm:text-4xl font-raleway md:text-5xl xl:text-4xl xl2:font-semibold"
-          initial={{ y: -10 }} 
-          animate={{ y: 19 }} 
-          transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}>
+          className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
+          // initial={{ y: -10 }} 
+          // animate={{ y: 19 }} 
+          // transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
+          >
           <h1>Skills</h1>
         </motion.div>
-        <div className="h-0 mt-3 border-[2px] border-skyBlue w-11 ms2:w-16 md:w-20 md:border-[3px] md:mt-4 xl:w-16 xl:mt-3 xl2:border-[2px] xl2:w-14"></div>
+        <div className="h-0 mt-3 border-[2px] border-skyBlue w-11 ms2:w-16 md:w-14 md:border-[3px] md:mt-4 xl:w-16 xl:mt-3 xl2:border-[2px] xl2:w-14"></div>
       </div>
 
       <motion.div 

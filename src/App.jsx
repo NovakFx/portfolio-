@@ -21,7 +21,7 @@ function App() {
       </div>
       <ArrowUp />
       <div className="pl-[0rem] xl:pl-[18rem] transition-transform duration-500 ease-in-out"> 
-        <div id="home" className={`min-h-screen w-full  ${selected === 0 ? "h-screen" : ""}`}>
+        <div id="home" className={`min-h-screen  ${selected === 0 ? "h-screen" : ""}`}>
           <Home />
         </div>
 
@@ -29,24 +29,24 @@ function App() {
           <About />
         </div>
 
-        <div id="counter" className={` ${selected === 1 ? "" : ""}`}>
+        <div id="counter" className={` ${selected === 2 ? "" : ""}`}>
           <NumberCounter />
         </div>
 
-        <div id="skills" className={` ${selected === 1 ? "" : ""}`}>
+        <div id="skills" className={` ${selected === 3 ? "" : ""}`}>
           <Skills />
         </div>
 
-        <div id="resume" className={`min-h-screen ${selected === 2 ? "h-screen" : ""}`}>
+        <div id="resume" className={`min-h-screen ${selected === 4 ? "h-screen" : ""}`}>
           <Resume />
         </div>
-        <div id="portfolio" className={`min-h-screen ${selected === 3 ? "h-screen" : ""}`}>
+        <div id="portfolio" className={`min-h-screen ${selected === 5 ? "h-screen" : ""}`}>
           <Portfolio />
         </div>
-        <div id="services" className={`min-h-screen ${selected === 4 ? "h-screen" : ""}`}>
+        <div id="services" className={`min-h-screen ${selected === 6 ? "h-screen" : ""}`}>
           <Services />
         </div>
-        <div id="contact" className={`min-h-screen ${selected === 5 ? "h-screen" : ""}`}>
+        <div id="contact" className={`min-h-screen ${selected === 7 ? "h-screen" : ""}`}>
           <Contact />
         </div>
       </div>

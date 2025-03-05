@@ -6,20 +6,20 @@ const About = () => {
 
 
   return (
-    <div id="about" className="min-h-screen h-screen bg-white pr-2">
-      <div className="ml-3 pt-11 md:pt-20 md:ml-8 xl:ml-5 xl2:ml-3">
+    <div id="about" className="h-screen bg-white pr-2">
+      <div className="ml-3 pt-11 md:pt-20 md:ml-16 xl:ml-5 xl2:ml-3">
         <div className="md:mr-10 xl:mr-4">
           
           <div>
             <motion.div 
-            className="text-3xl font-bold sm:text-4xl font-raleway md:text-5xl xl:text-4xl xl2:font-semibold"
+            className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
             initial={{ y: -10 }} 
             animate={{ y: 19 }} 
             transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}>
             <h1>About</h1>
             </motion.div>
             
-            <div className="h-0 mt-3 border-[2px] border-skyBlue w-11 ms2:w-16 md:w-20 md:border-[3px] md:mt-4 xl:w-16 xl:mt-3 xl2:border-[2px] xl2:w-14"></div>
+            <div className="h-0 mt-3 border-[2px] border-skyBlue w-11 ms2:w-16 md:w-14 md:border-[3px] md:mt-4 xl:w-16 xl:mt-3 xl2:border-[2px] xl2:w-14"></div>
 
           </div>
 
@@ -44,7 +44,6 @@ const About = () => {
             >
               <img src="/Images/Me.avif" alt="Profile" className="object-cover rounded-md md:h-[35rem]  xl:h-[23rem] xl:mt-3 xl2:mt-2" />
             </motion.div>
-
             <div>
              
               <motion.div 

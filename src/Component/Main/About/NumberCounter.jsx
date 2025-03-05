@@ -31,8 +31,8 @@ const NumberCounter = () => {
   const count4 = useCounter(0, 40, isInView);
 
   return (
-    <div className="h-[34.5rem] ms1:h-[38.9rem] pro:h-[45rem] ms2:h-[50rem] sm:h-[45rem] md:h-[50rem] xl:h-[14rem]">
-    <div ref={ref} className=" mt-[46.4rem] ms1:mt-[33rem] pro:mt-[33.8rem] ms2:mt-[40.8rem] sm:mt-[37.8rem] flex flex-col gap-5 pro:gap-8  md:grid md:grid-cols-2 xl:mt-5 xl2:mt-10 xl:grid xl:grid-cols-4 md:mt-[48rem]">
+    <div className="h-[34.5rem] ms1:h-[38.9rem] pro:h-[45rem] ms2:h-[50rem] sm:h-[45rem] md:h-[30rem] xl:h-[14rem]">
+    <div ref={ref} className=" mt-[46.4rem] ms1:mt-[33rem] pro:mt-[33.8rem] ms2:mt-[40.8rem] sm:mt-[37.8rem]  flex flex-col gap-5 pro:gap-8  md:grid md:grid-cols-2 xl:mt-5 md:ml-16 xl2:mt-10 xl:grid xl:grid-cols-4 md:mt-[48rem] md:mr-10 xl:mr-4">
       {[{ icon:<CiFaceSmile />, count: count1, label: "Happy Clients", sub: "consequuntur quae" },
         { icon:<PiFileImage />, count: count2, label: "Projects", sub: "adipisci atque cum quia aut" },
         { icon:<BsHeadset />, count: count3, label: "Hours Of Support", sub: "aut commodi quaerat" },

@@ -42,6 +42,7 @@ export default {
         CharcoalGray: 'rgba(39, 40, 41, 1)',
         mintGray: 'rgba(244, 244, 244, 1)',  
         creamGray: 'rgb(242, 249, 252)',  
+        Gray: 'rgb(82, 83, 84)',  
        },
 
        fontFamily: {
@@ -51,10 +52,11 @@ export default {
         raleway: ['Raleway', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
+        signika: ['Signika Negative', 'sans-serif'],
+        worksans: ['Work Sans', 'sans-serif'], 
       },
+         
       
-      
-
     },
   }, 
   plugins: [],

@@ -46,6 +46,7 @@ const Hamburger = ({ setOpen }) => {
   
 
   return (
+    <div className=" bg-black/30 w-full h-full fixed top-0 left-0 z-40" >
     <div className="bg-darkTheme ms:w-[16.5rem] ms1:w-[17rem] z-50  h-screen fixed top-0 left-0 overflow-y-scroll  sm:w-[19.7rem] md:w-[23rem] md1:w-[25rem] transition-transform duration-500 ease-in-out">
       <div className="justify-items-center items-center">
         <div className="mt-4 ms2:mt-6 w-[120px] h-[120px] sm:w-[127px] sm:h-[127px] md:w-[130px] md:h-[130px] border-[7px]  md:mt-8 md:border-[8px]  border-customgray rounded-full justify-items-center items-center">
@@ -116,6 +117,7 @@ const Hamburger = ({ setOpen }) => {
           ))}
         </nav>
       </div>
+    </div>
     </div>
   );
 };
