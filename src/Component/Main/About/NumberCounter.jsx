@@ -42,6 +42,7 @@ const NumberCounter = () => {
         initial={{opacity:0, y:70}}
         whileInView={{opacity:100, y:0}}
         transition={{duration:1, ease:'easeOut'}}
+        viewport={{ once: true }}
         >
         <div className="text-skyBlue mb-5 pro:mb-4 ms1:mb-1">
           {item.icon}

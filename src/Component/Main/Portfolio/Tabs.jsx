@@ -78,7 +78,7 @@ const Tabs = () => {
                 </AnimatePresence>
               </motion.div>
             </TabPanel>
-          ))}
+          ))}              
         </TabPanels>
       </TabGroup>
     </div>

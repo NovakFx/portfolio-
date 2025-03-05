@@ -4,13 +4,13 @@ import { PiSuitcaseSimple } from "react-icons/pi";
 
 const Services = () => {
   return (
-    <div id='services' className="min-h-screen  h-[100rem]">
+    <div id='services' className=" h-[100rem] ms:h-[60rem] ms1:h-[70rem] ms2:h-[83rem] sm:h-[80.5rem] md:h-[55.3rem] md1:h-[60rem] md2:h-[56rem] xl:h-[43rem] xl2:h-[40rem] ">
       <div className='ml-3 pt-16 md:pt-20 md:ml-16 xl:ml-5 xl2:ml-3 pr-4 md:mr-10 xl:mr-4'> 
         <motion.div 
               className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
-              initial={{ y: 13 }} 
-              whileInView={{ y: -18 }} 
-              transition={{ type: "spring", bounce: 0.5, duration: 2 }}
+                 initial={{ y: 13 }} 
+                 whileInView={{ y: -18 }}
+                 transition={{ type: "spring", bounce: 0.5, duration: 2 }}
             >
               <h1>Services</h1>
               <div className="h-0 mt-3 border-[2px] border-skyBlue w-11 ms2:w-16 md:w-14 md:border-[3px] md:mt-4 xl:w-16 xl:mt-3 xl2:border-[2px] xl2:w-14"></div>
@@ -20,7 +20,6 @@ const Services = () => {
                 initial={{opacity: 0, y:80}}
                 whileInView={{opacity:1,y:0}}
                 transition={{duration: 1, ease: "easeOut"}}
-
                 >
                   <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </motion.div>
@@ -33,6 +32,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut", delay: 1,}}
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-12 xl:w-[50px] xl:h-[50px] rounded-full flex justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px] transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>
@@ -47,7 +47,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut",  delay: 1.2,}}
-            
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-14 xl:w-[50px] xl:h-[50px] rounded-full flex  justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px]  transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>
@@ -62,7 +62,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut", delay: 1.2,}} 
-            
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-14 xl:w-[50px] xl:h-[50px] rounded-full flex  justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px]  transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>
@@ -77,6 +77,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut", delay: 1.3,}}
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-14 xl:w-[50px] xl:h-[50px] rounded-full flex  justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px] transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>
@@ -91,6 +92,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut", delay: 1.3,}}
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-14 xl:w-[50px] xl:h-[50px] rounded-full flex  justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px] transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>
@@ -105,6 +107,7 @@ const Services = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut", delay: 1.4,}}
+            viewport={{ once: true }} 
             >
              <div className='bg-skyBlue h-10 w-10 ms1:h-12 ms1:w-12 pro:w-16 pro:h-16 ms2:w-14 ms2:h-14 xl:w-[50px] xl:h-[50px] rounded-full flex  justify-center items-center group-hover:bg-white group-hover:border-skyBlue border-[1px] transition-colors duration-500 ease-in-out'><PiSuitcaseSimple className=' text-white text-2xl ms2:text-3xl xl:text-[27px] group-hover:text-skyBlue transition-colors duration-500 ease-in-out'/></div> 
               <div>

@@ -43,7 +43,7 @@ function App() {
         <div id="portfolio" className={`min-h-screen ${selected === 5 ? "h-screen" : ""}`}>
           <Portfolio />
         </div>
-        <div id="services" className={`min-h-screen ${selected === 6 ? "h-screen" : ""}`}>
+        <div id="services" className={` ${selected === 6 ? "h-screen" : ""}`}>
           <Services />
         </div>
         <div id="contact" className={`min-h-screen ${selected === 7 ? "h-screen" : ""}`}>

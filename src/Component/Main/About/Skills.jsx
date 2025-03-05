@@ -29,7 +29,9 @@ const Skills = () => {
         className="mt-5 text-sm ms2:text-lg text-CharcoalGray md:text-lg md:mt-7 font-roboto md:mr-10 xl:mr-auto xl:text-base"
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}>
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true }}
+        >
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit.</p>
       </motion.div>
       
@@ -46,6 +48,7 @@ const Skills = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `${skill.percentage}%` }}
                 transition={{ duration: 1 }}
+                viewport={{ once: true }}
               />
             </div>
           </div>

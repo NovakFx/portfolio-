@@ -33,6 +33,7 @@ const Resume = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut"}}
+            viewport={{ once: true }}
             >
               <h1 className='font-signika font-bold pl-2 pb-1 text-base ms2:text-xl sm:text-2xl md:text-3xl'>Summary</h1>
 
@@ -65,6 +66,7 @@ const Resume = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut"}}
+            viewport={{ once: true }}
             >
               <h1 className='font-signika font-bold pl-2 pb-1 text-base ms1:py-4 ms1:pb-0 ms2:py-2 ms2:text-xl sm:text-2xl sm:py-3 md:text-3xl'>Education</h1>
 
@@ -107,6 +109,7 @@ const Resume = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut"}}
+            viewport={{ once: true }}
             >
               <h1 className='font-signika font-bold pl-2 pb-1 text-base ms2:py-1 ms2:pb-2 ms2:text-xl sm:text-2xl sm:py-2 md:text-3xl md1:py-4'>Professional Experience</h1>
 
