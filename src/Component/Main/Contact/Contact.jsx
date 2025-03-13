@@ -48,12 +48,16 @@ const Contact = () => {
 
           <div className='grid grid-cols-2 '>
 
+<<<<<<< HEAD
           <motion.div className='bg-white shadow-[0_4px_10px_rgba(0,0,0,0.2)] mx-auto mt-10 px-3 pb-10 pro:pb-8 md:px-7 xl:mt-8 xl:ml-0 xl:mr-6 h-auto'
           initial={{opacity: 0, y:80}}
           whileInView={{opacity:1,y:0}}
           transition={{duration: 1, ease: "easeOut",  delay: 0.5,}}
           viewport={{ once: true }} 
           >
+=======
+          <div className='bg-white shadow-[0_4px_10px_rgba(0,0,0,0.2)] mx-auto mt-10 px-3 pb-10 pro:pb-8 md:px-7 xl:mt-8 xl:ml-0 xl:mr-6 h-auto'>
+>>>>>>> ca8aa1549d17c84339157f90715c780a1c83a4e3
             {/* first */}
             <motion.div 
                className='grid grid-cols-[3.5rem_auto] group ms1:grid-cols-[3.8rem_auto] pro:grid-cols-[4.6rem_auto] pt-8 my-4 md:mt-0'
@@ -108,6 +112,7 @@ const Contact = () => {
                 <MapComponent />
                </motion.div>
 
+<<<<<<< HEAD
           </motion.div>
 
     <motion.div className='bg-white shadow-[0_4px_10px_rgba(0,0,0,0.2)] mx-auto mt-8 pt-4 px-3 pb-10 ms:pb-6 ms:px-4 pro:pb-8 md:px-7 xl2:ml-3 xl2:mr-3 h-auto'
@@ -116,6 +121,11 @@ const Contact = () => {
     transition={{duration: 1, ease: "easeOut",  delay: 0.5,}}
     viewport={{ once: true }} 
     >
+=======
+          </div>
+
+          <div className='bg-white shadow-[0_4px_10px_rgba(0,0,0,0.2)] mx-auto mt-8 pt-4 px-3 pb-10 ms:pb-6 ms:px-4 pro:pb-8 md:px-7 xl2:ml-3 xl2:mr-3 h-auto'>
+>>>>>>> ca8aa1549d17c84339157f90715c780a1c83a4e3
 
       <motion.form onSubmit={handleSubmit} 
          className="space-y-5"
@@ -191,7 +201,11 @@ const Contact = () => {
     </motion.form>
 
 
+<<<<<<< HEAD
           </motion.div>
+=======
+          </div>
+>>>>>>> ca8aa1549d17c84339157f90715c780a1c83a4e3
 
       </div>
 
