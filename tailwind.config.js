@@ -43,6 +43,7 @@ export default {
         mintGray: 'rgba(244, 244, 244, 1)',  
         creamGray: 'rgb(242, 249, 252)',  
         Gray: 'rgb(82, 83, 84)',  
+        LightBlue: 'rgb(237, 248, 252)',  
        },
 
        fontFamily: {

@@ -12,3 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
+.slick-dots li.slick-active div {
+  @apply bg-skyBlue border-skyBlue scale-110;
+}

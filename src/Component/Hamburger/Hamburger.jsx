@@ -92,7 +92,7 @@ const Hamburger = ({ setOpen }) => {
                   selected === index 
                     ? "active:text-skyBlue text-xl sm:text-[1.6rem] md:text-[1.8rem] "
                     : "text-gray-500 hover:text-white"
-                } group flex items-center gap-2 py-3 text-lg ms1:text-xl ms1:py-6 ms1:pt-2 sm:text-[1.5rem] sm:py-6 sm:pt-4 md:text-[1.7rem] md:py-7 md1:text-[1.9rem] md1:py-8 md2:py-7 ${item.path === 'counter' || item.path === 'skills' ? 'hidden' : '' } `}
+                } group flex items-center gap-2 py-3 text-lg ms1:text-xl ms1:py-6 ms1:pt-2 sm:text-[1.5rem] sm:py-6 sm:pt-4 md:text-[1.7rem] md:py-7 md1:text-[1.9rem] md1:py-8 md2:py-7 ${item.path === 'counter' || item.path === 'skills' || item.path === 'testimonial' ? 'hidden' : '' } `}
               >
                 <div
                   className={`icon group-hover:text-skyBlue ${

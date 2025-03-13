@@ -16,9 +16,9 @@ const Skills = () => {
       <div className='pt-11 ms2:pt-14'>
         <motion.div 
           className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
-          // initial={{ y: -10 }} 
-          // animate={{ y: 19 }} 
-          // transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
+          // initial={{ y: 13, opacity: 0 }} 
+          // whileInView={{ y: -18, opacity: 1 }}
+          // transition={{ type: "spring", bounce: 0.5, duration: 2 }}
           >
           <h1>Skills</h1>
         </motion.div>

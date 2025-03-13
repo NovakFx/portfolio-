@@ -9,9 +9,21 @@ import Contact from "./Component/Main/Contact/Contact";
 import ArrowUp from "./Component/sideNavbar/ArrowUp";
 import NumberCounter from "./Component/Main/About/NumberCounter";
 import Skills from "./Component/Main/About/Skills";
+import Testimonial from "./Component/Testimonial/Testimonial";
 
 function App() {
   const [selected, setSelected] = useState(0);
+
+  // const size = 10;
+  // if (size > 100) {
+  //   console.log('Huge');
+  // } else if (size > 20) {
+  //   console.log('Medium');
+  // } else if (size >= 10) {
+  //   console.log('Small');
+  // } else if (size > 5) {
+  //   console.log('pip');
+  // }
 
   return (
     <div className="overflow-hidden overflow-x-hidden ">
@@ -40,15 +52,23 @@ function App() {
         <div id="resume" className={`min-h-screen ${selected === 4 ? "h-screen" : ""}`}>
           <Resume />
         </div>
+
         <div id="portfolio" className={`min-h-screen ${selected === 5 ? "h-screen" : ""}`}>
           <Portfolio />
         </div>
+
         <div id="services" className={` ${selected === 6 ? "h-screen" : ""}`}>
           <Services />
         </div>
-        <div id="contact" className={`min-h-screen ${selected === 7 ? "h-screen" : ""}`}>
+
+        <div id="testimonial" className={` ${selected === 7 ? "h-screen" : ""}`}>
+          <Testimonial />
+        </div>
+
+        <div id="contact" className={`min-h-screen ${selected === 8 ? "h-screen" : ""}`}>
           <Contact />
         </div>
+
       </div>
     </div>
   );
