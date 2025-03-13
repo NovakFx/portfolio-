@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, scrollSpy } from "react-scroll";
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { IoCloseOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Hamburger from '../Hamburger/Hamburger';
@@ -42,6 +41,7 @@ const Sidebar = () => {
     { Icon: <FaRegFileAlt />, label: "Resume", path: "resume" },
     { Icon: <HiOutlinePhoto />, label: "Portfolio", path: "portfolio" },
     { Icon: <BiServer />, label: "Services", path: "services" },
+    { Icon: <BiServer className='hidden '/>, label: "", path: "testimonial" },
     { Icon: <CgMail />, label: "Contact", path: "contact" },
     { Icon: <GiExtractionOrb />, label: "Extra", path: "extra" },
   ];
@@ -54,16 +54,17 @@ const Sidebar = () => {
 
   return (
     <div className="xl:bg-darkTheme xl:w-[18rem] xl:h-screen xl:fixed xl:top-0 xl:left-0">
-      <motion.div className="xl:hidden z-50 transition-transform duration-500 ease-in-out fixed   " onClick={handleOpen}
-      // whileHover={{ scale: 1.1 }} 
-      // whileTap={{ scale: 0.9 }}
+      <div 
+      className="xl:hidden z-50 fixed top-4 right-4 transition-transform duration-500 ease-in-out"
+      onClick={handleOpen}
       >
-        {Open ? (
-          <IoCloseOutline className="mx-[17rem] ms1:mx-[19rem] ms1:w-9 ms1:h-9 pro:mx-[19.7rem] ms2:mx-[20.5rem] ms2:mt-5 sm:mx-[21.5rem] md:mx-[42.5rem] md:w-12 md:h-12 md1:mx-[46rem] md2:mx-[50.5rem] transition-transform duration-500 ease-in-out my-5 mt-3 w-8 h-8 text-white py-2 px-2 rounded-full bg-skyBlue" />
-        ) : (
-          <RxHamburgerMenu className="mx-[17rem] ms1:mx-[19rem] ms1:w-9 ms1:h-9 pro:mx-[19.7rem] ms2:mx-[20.5rem] ms2:mt-5 sm:mx-[21.5rem] md:mx-[42.5rem] md:w-12 md:h-12 md1:mx-[46rem] md2:mx-[50.5rem] my-5 mt-3 w-8 h-8 text-white py-2 px-2 text-xs transition-transform duration-500 ease-in-out rounded-full bg-skyBlue" />
-        )}
-      </motion.div>
+         {Open ? (
+           <IoCloseOutline className="w-10 h-10 p-2 rounded-full bg-skyBlue text-white shadow-lg hover:bg-sky-700 transition-transform duration-300 transform hover:scale-110" />
+         ) : (
+           <RxHamburgerMenu className="w-10 h-10 p-2 rounded-full bg-skyBlue text-white shadow-lg hover:bg-sky-700 transition-transform duration-500 ease-in-out transform hover:scale-110" />
+         )}
+      </div>
+
 
 
         <div>
@@ -112,7 +113,7 @@ const Sidebar = () => {
                     ? 'active:text-skyBlue'
                     : 'text-gray-500 hover:text-white'
                 } group flex items-center gap-2 py-4 text-xl transition-transform duration-500 ease-in-out cursor-pointer ${
-                  item.path === "counter" || item.path === 'skills' ? "opacity-0 pointer-events-none hidden" : ""
+                  item.path === "counter" || item.path === 'skills' || item.path === 'testimonial' ? "opacity-0 pointer-events-none hidden" : ""
                 }`}
                 
               >

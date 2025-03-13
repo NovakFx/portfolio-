@@ -60,11 +60,13 @@ const Tabs = () => {
             <TabPanel key={category}>
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                initial={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0, y:80 , scale: 0.95 }}
+                whileInView={{opacity:1,y:0}}
                 animate={{ opacity: 1, scale: 1 }}
                 onClick={animate}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
+                viewport={{ once: true }}
               >
                 <AnimatePresence mode="popLayout">
                   {images.map((item, index) => (

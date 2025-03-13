@@ -9,9 +9,9 @@ const Resume = () => {
      
       <motion.div 
             className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
-            initial={{ y: -10 }} 
-            animate={{ y: 19 }} 
-            transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
+            initial={{ y: 13, opacity: 0 }} 
+            whileInView={{ y: -18, opacity: 1 }}
+            transition={{ type: "spring", bounce: 0.5, duration: 2 }}
           >
             <h1>Resume</h1>
           </motion.div>
@@ -22,14 +22,14 @@ const Resume = () => {
              initial={{opacity: 0, y:80}}
              whileInView={{opacity:1,y:0}}
              transition={{duration: 1, ease: "easeOut"}}
-          
+             viewport={{ once: true }}
              >
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </motion.div>
           <div className='xl:grid xl:grid-cols-2'>
 
             <div> <motion.div
-            className='mt-14 '
+            className='mt-14 xl:mt-11'
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut"}}
@@ -128,7 +128,7 @@ const Resume = () => {
                 </div>
 
                 <div className='pr-8 '>
-                  <h1 className='text-sm text-Gray font-semibold  pr-10 ms2:text-lg ms2:leading-5 sm:text-xl md:text-2xl'>Senior Graphic Design Specialist</h1>
+                  <h1 className='text-sm text-Gray font-semibold pr-10 ms2:text-lg ms2:leading-5 sm:text-xl md:text-2xl xl:text-[22px]'>Senior Graphic Design Specialist</h1>
                   <p className='pl-4 py-2 font-semibold text-xs font-raleway ms2:text-sm ms2:py-3 sm:text-lg md:text-xl md1:py-4'>2019 - Present</p>
                   <p className='text-sm font-roboto italic mt-1 ms2:text-base sm:text-lg md:text-xl'>Experion, New York, NY</p>
                   <ul className='list-disc pl-4'>

@@ -13,9 +13,10 @@ const About = () => {
           <div>
             <motion.div 
             className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
-            initial={{ y: -10 }} 
-            animate={{ y: 19 }} 
-            transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}>
+            initial={{ y: 13, opacity: 0 }} 
+            whileInView={{ y: -18, opacity: 1 }}
+            transition={{ type: "spring", bounce: 0.5, duration: 2 }}
+            >
             <h1>About</h1>
             </motion.div>
             
@@ -28,7 +29,7 @@ const About = () => {
             initial={{opacity: 0, y:80}}
             whileInView={{opacity:1,y:0}}
             transition={{duration: 1, ease: "easeOut"}}
-
+            viewport={{ once: true }}
           >
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </motion.div>
@@ -41,6 +42,7 @@ const About = () => {
               initial={{opacity:0, y:80}}
               whileInView={{opacity:100,y:0}}
               transition={{duration: 1, ease:'easeOut'}}
+              viewport={{ once: true }}
             >
               <img src="/Images/Me.avif" alt="Profile" className="object-cover rounded-md md:h-[35rem]  xl:h-[23rem] xl:mt-3 xl2:mt-2" />
             </motion.div>
@@ -51,6 +53,7 @@ const About = () => {
                 initial={{opacity:0, y:80}}
                 whileInView={{opacity:100, y:0}}
                 transition={{duration: 1, ease:'easeOut'}}
+                viewport={{ once: true }}
               >
                 <h1>Web Developer & UI/UX Designer.</h1>
               </motion.div>
@@ -59,6 +62,7 @@ const About = () => {
                initial={{opacity:0, y:80}}
                whileInView={{opacity:100, y:0}}
                transition={{duration:1, ease:'easeOut'}} 
+               viewport={{ once: true }}
               >
                 <p className="text-base ms2:text-lg mt-4 md:mt-6 text-CharcoalGray font-roboto md1:text-xl xl:text-base xl:mt-0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -82,7 +86,7 @@ const About = () => {
                     initial={{opacity:0, y:70}}
                     whileInView={{opacity:100, y:0}}
                     transition={{duration:1, ease:'easeOut'}}
-                    
+                    viewport={{ once: true }}
                   >
                     <IoIosArrowForward className="text-skyBlue text-xl font-thin ms2:text-2xl xl:text-xl" />
                     <h1 className="font-bold md:text-xl md1:text-2xl xl:text-base">{item.label}</h1>
@@ -95,6 +99,7 @@ const About = () => {
               initial={{opacity:0, y:70}}
               whileInView={{opacity:100, y:0}}
               transition={{duration:1, ease:'easeOut'}}  
+              viewport={{ once: true }}
           >
             <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.</p>
           </motion.div>

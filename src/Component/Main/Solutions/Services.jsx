@@ -4,7 +4,7 @@ import { PiSuitcaseSimple } from "react-icons/pi";
 
 const Services = () => {
   return (
-    <div id='services' className=" h-[100rem] ms:h-[60rem] ms1:h-[70rem] ms2:h-[83rem] sm:h-[80.5rem] md:h-[55.3rem] md1:h-[60rem] md2:h-[56rem] xl:h-[43rem] xl2:h-[40rem] ">
+    <div id='services' className=" h-[100rem] ms:h-[60rem] ms1:h-[70rem] ms2:h-[83rem] sm:h-[80.5rem] md:h-[55.3rem] md1:h-[60rem] md2:h-[56rem] xl:h-[42.5rem] xl2:h-[39rem] ">
       <div className='ml-3 pt-16 md:pt-20 md:ml-16 xl:ml-5 xl2:ml-3 pr-4 md:mr-10 xl:mr-4'> 
         <motion.div 
               className="text-3xl font-bold sm:text-4xl font-raleway md:text-4xl xl:text-4xl xl2:font-semibold"
@@ -20,6 +20,7 @@ const Services = () => {
                 initial={{opacity: 0, y:80}}
                 whileInView={{opacity:1,y:0}}
                 transition={{duration: 1, ease: "easeOut"}}
+                viewport={{ once: true }}
                 >
                   <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </motion.div>
